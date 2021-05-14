@@ -71,8 +71,12 @@ function gradeQuiz(candidateAnswers) {
   
     console.log(`>>> Overall Grade: ${grade} % (${candidateScore} / ${TopScore} responses were correct <<<`);
     if (grade >= 80) {
-      console.log(`>>> You Passed!`);
-    }
+      console.log(`>>> Status: You Passed!`);
+
+    } else {
+      console.log(`>>> Status: FAILED <<<<`)
+    }  
+    
 
   return grade;
 }
